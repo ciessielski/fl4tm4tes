@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Flatmate" syncable="YES">
+        <attribute name="idFlatmate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nazwa" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="wydatek" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Wydatek" inverseName="flatmate" inverseEntity="Wydatek" syncable="YES"/>
+    </entity>
+    <entity name="Wydatek" syncable="YES">
+        <attribute name="czyKupione" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="czyRozliczone" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dataZakupu" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="idWydatek" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ktoPlaci" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ktoWprowadza" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="kwota" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="opis" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="flatmate" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Flatmate" inverseName="wydatek" inverseEntity="Flatmate" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Wydatek" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="Flatmate" positionX="-101" positionY="90" width="128" height="90"/>
+    </elements>
+</model>
