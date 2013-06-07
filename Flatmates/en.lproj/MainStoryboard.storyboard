@@ -146,12 +146,30 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="what to buy.." borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GqL-m6-bsr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="Ozn-vP-cRq"/>
+                                </constraints>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0,00 zł" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imW-eV-TF4">
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GqL-m6-bsr" firstAttribute="top" secondItem="eld-fJ-G7b" secondAttribute="top" constant="65" id="2qd-6p-p8T"/>
                             <constraint firstItem="lHC-V7-Su7" firstAttribute="trailing" secondItem="eld-fJ-G7b" secondAttribute="trailing" type="default" id="BzX-9i-jc8"/>
+                            <constraint firstItem="imW-eV-TF4" firstAttribute="top" secondItem="GqL-m6-bsr" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Kzi-8C-fe6"/>
+                            <constraint firstAttribute="trailing" secondItem="GqL-m6-bsr" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Mqd-nh-bi1"/>
                             <constraint firstItem="lHC-V7-Su7" firstAttribute="leading" secondItem="eld-fJ-G7b" secondAttribute="leading" type="default" id="Puc-H6-1wV"/>
                             <constraint firstItem="lHC-V7-Su7" firstAttribute="top" secondItem="eld-fJ-G7b" secondAttribute="top" type="default" id="gHE-NF-guR"/>
+                            <constraint firstAttribute="trailing" secondItem="imW-eV-TF4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hKk-LP-3q8"/>
+                            <constraint firstItem="imW-eV-TF4" firstAttribute="leading" secondItem="GqL-m6-bsr" secondAttribute="leading" type="default" id="rhp-hZ-paf"/>
                         </constraints>
                     </view>
                 </viewController>
