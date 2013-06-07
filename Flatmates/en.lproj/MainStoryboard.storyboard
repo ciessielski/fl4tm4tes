@@ -11,7 +11,19 @@
                     <view key="view" contentMode="scaleToFill" id="hug-67-Dra">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="VaM-CM-FBL">
+                                <items>
+                                    <navigationItem title="Account" id="JJU-FL-Ptl"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VaM-CM-FBL" firstAttribute="leading" secondItem="hug-67-Dra" secondAttribute="leading" type="default" id="N7Q-wx-3jN"/>
+                            <constraint firstItem="VaM-CM-FBL" firstAttribute="trailing" secondItem="hug-67-Dra" secondAttribute="trailing" type="default" id="ViM-mJ-50y"/>
+                            <constraint firstItem="VaM-CM-FBL" firstAttribute="top" secondItem="hug-67-Dra" secondAttribute="top" type="default" id="cWt-uZ-tFI"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" id="JhJ-YN-Mib"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -27,13 +39,25 @@
                     <view key="view" contentMode="scaleToFill" id="17">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="iwf-CN-zaS">
+                                <items>
+                                    <navigationItem title="History" id="4gU-0C-RgX"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iwf-CN-zaS" firstAttribute="top" secondItem="17" secondAttribute="top" type="default" id="Lxt-Xs-OjA"/>
+                            <constraint firstItem="iwf-CN-zaS" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="OBT-1I-399"/>
+                            <constraint firstItem="iwf-CN-zaS" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="ivm-MS-i0c"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" id="6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="498"/>
+            <point key="canvasLocation" x="753" y="506"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="15">
@@ -53,7 +77,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="4" y="-24"/>
         </scene>
         <!--Fm Lista View Controller - List-->
         <scene sceneID="Qbu-iR-Zkz">
@@ -63,9 +87,23 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" barStyle="blackOpaque" id="UTc-hb-UN7">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="List" id="zYx-vM-Yiz">
+                                    <barButtonItem key="leftBarButtonItem" systemItem="edit" id="NIq-C8-BDz"/>
+                                    <barButtonItem key="rightBarButtonItem" systemItem="add" id="f2J-cr-OZT">
+                                        <connections>
+                                            <segue destination="ZQ7-c5-nXe" kind="modal" id="a9e-qz-NIT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="0Cl-6o-H1A" style="IBUITableViewCellStyleDefault" id="IgT-RG-1rl">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
@@ -92,8 +130,69 @@
             </objects>
             <point key="canvasLocation" x="667" y="-243"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="IuV-A6-BOy">
+            <objects>
+                <viewController id="ZQ7-c5-nXe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eld-fJ-G7b">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="lHC-V7-Su7">
+                                <items>
+                                    <navigationItem title="Product" id="ADv-QG-Cax">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="lxv-Vo-tLt"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="vVd-mO-a4G"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lHC-V7-Su7" firstAttribute="trailing" secondItem="eld-fJ-G7b" secondAttribute="trailing" type="default" id="BzX-9i-jc8"/>
+                            <constraint firstItem="lHC-V7-Su7" firstAttribute="leading" secondItem="eld-fJ-G7b" secondAttribute="leading" type="default" id="Puc-H6-1wV"/>
+                            <constraint firstItem="lHC-V7-Su7" firstAttribute="top" secondItem="eld-fJ-G7b" secondAttribute="top" type="default" id="gHE-NF-guR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KG6-Hg-weL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="-881"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xdT-4k-cjE">
+            <objects>
+                <viewController id="Bb0-bZ-8iR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m57-1U-Sly">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="Uud-y8-UdH">
+                                <items>
+                                    <navigationItem title="Edit" id="aJU-q3-oTK">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BdM-cO-ljm"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="BfL-WG-SZR"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Uud-y8-UdH" firstAttribute="trailing" secondItem="m57-1U-Sly" secondAttribute="trailing" type="default" id="EnU-ku-6WK"/>
+                            <constraint firstItem="Uud-y8-UdH" firstAttribute="top" secondItem="m57-1U-Sly" secondAttribute="top" type="default" id="SLa-uo-trE"/>
+                            <constraint firstItem="Uud-y8-UdH" firstAttribute="leading" secondItem="m57-1U-Sly" secondAttribute="leading" type="default" id="zYp-gV-BWR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pbr-bD-Ivu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="-165"/>
+        </scene>
     </scenes>
     <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
         <class className="fmAccountViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/fmAccountViewController.h"/>
         </class>

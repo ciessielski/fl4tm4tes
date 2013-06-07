@@ -12,7 +12,6 @@
 
 {
     NSMutableArray *dane;
-    //
 }
 
 @end
