@@ -21,6 +21,12 @@
 		62A22585175E936D00027861 /* fmAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A22584175E936D00027861 /* fmAccountViewController.m */; };
 		62A22588175E9F1900027861 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62A22586175E9F1900027861 /* Model.xcdatamodeld */; };
 		62A2258C175EA3D700027861 /* fmListaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A2258B175EA3D700027861 /* fmListaViewController.m */; };
+		9F68D63117634D9600199BB9 /* fmBalanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D63017634D9600199BB9 /* fmBalanceCell.m */; };
+		9F68D6351763587100199BB9 /* stat3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F68D6321763587100199BB9 /* stat3.png */; };
+		9F68D6361763587100199BB9 /* stat1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F68D6331763587100199BB9 /* stat1.png */; };
+		9F68D6371763587100199BB9 /* stat2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F68D6341763587100199BB9 /* stat2.png */; };
+		9F68D63A17635BE000199BB9 /* fmTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F68D63917635BE000199BB9 /* fmTabBarController.m */; };
+		9F68D63C176367B000199BB9 /* fulltry.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F68D63B176367B000199BB9 /* fulltry.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +51,14 @@
 		62A22587175E9F1900027861 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		62A2258A175EA3D700027861 /* fmListaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmListaViewController.h; sourceTree = "<group>"; };
 		62A2258B175EA3D700027861 /* fmListaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmListaViewController.m; sourceTree = "<group>"; };
+		9F68D62F17634D9600199BB9 /* fmBalanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmBalanceCell.h; sourceTree = "<group>"; };
+		9F68D63017634D9600199BB9 /* fmBalanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmBalanceCell.m; sourceTree = "<group>"; };
+		9F68D6321763587100199BB9 /* stat3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stat3.png; sourceTree = "<group>"; };
+		9F68D6331763587100199BB9 /* stat1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stat1.png; sourceTree = "<group>"; };
+		9F68D6341763587100199BB9 /* stat2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stat2.png; sourceTree = "<group>"; };
+		9F68D63817635BE000199BB9 /* fmTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmTabBarController.h; sourceTree = "<group>"; };
+		9F68D63917635BE000199BB9 /* fmTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fmTabBarController.m; sourceTree = "<group>"; };
+		9F68D63B176367B000199BB9 /* fulltry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fulltry.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +105,12 @@
 		62A2255A175E91DB00027861 /* Flatmates */ = {
 			isa = PBXGroup;
 			children = (
+				62A2256C175E91DB00027861 /* MainStoryboard.storyboard */,
 				62A22589175E9F3600027861 /* Model */,
 				62A22563175E91DB00027861 /* fmAppDelegate.h */,
 				62A22564175E91DB00027861 /* fmAppDelegate.m */,
-				62A2256C175E91DB00027861 /* MainStoryboard.storyboard */,
+				9F68D62F17634D9600199BB9 /* fmBalanceCell.h */,
+				9F68D63017634D9600199BB9 /* fmBalanceCell.m */,
 				62A22582175E926500027861 /* Controller */,
 				62A2255B175E91DB00027861 /* Supporting Files */,
 			);
@@ -104,6 +120,10 @@
 		62A2255B175E91DB00027861 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F68D6321763587100199BB9 /* stat3.png */,
+				9F68D6331763587100199BB9 /* stat1.png */,
+				9F68D6341763587100199BB9 /* stat2.png */,
+				9F68D63B176367B000199BB9 /* fulltry.png */,
 				62A2255C175E91DB00027861 /* Flatmates-Info.plist */,
 				62A2255D175E91DB00027861 /* InfoPlist.strings */,
 				62A22560175E91DB00027861 /* main.m */,
@@ -118,6 +138,8 @@
 		62A22582175E926500027861 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9F68D63817635BE000199BB9 /* fmTabBarController.h */,
+				9F68D63917635BE000199BB9 /* fmTabBarController.m */,
 				62A2258A175EA3D700027861 /* fmListaViewController.h */,
 				62A2258B175EA3D700027861 /* fmListaViewController.m */,
 				62A22583175E936D00027861 /* fmAccountViewController.h */,
@@ -193,6 +215,10 @@
 				62A22569175E91DB00027861 /* Default@2x.png in Resources */,
 				62A2256B175E91DB00027861 /* Default-568h@2x.png in Resources */,
 				62A2256E175E91DB00027861 /* MainStoryboard.storyboard in Resources */,
+				9F68D6351763587100199BB9 /* stat3.png in Resources */,
+				9F68D6361763587100199BB9 /* stat1.png in Resources */,
+				9F68D6371763587100199BB9 /* stat2.png in Resources */,
+				9F68D63C176367B000199BB9 /* fulltry.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +235,8 @@
 				62A22585175E936D00027861 /* fmAccountViewController.m in Sources */,
 				62A22588175E9F1900027861 /* Model.xcdatamodeld in Sources */,
 				62A2258C175EA3D700027861 /* fmListaViewController.m in Sources */,
+				9F68D63117634D9600199BB9 /* fmBalanceCell.m in Sources */,
+				9F68D63A17635BE000199BB9 /* fmTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +359,7 @@
 				62A22581175E91DB00027861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

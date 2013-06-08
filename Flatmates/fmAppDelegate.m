@@ -12,8 +12,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+
+
+//    
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade]   ;
+//
+//    
+////    CGRect screenRect = [[self window] bounds];
+////    UIScrollView *screoolView = [[UIScrollView alloc] initWithFrame:screenRect];
+////    [[self window] addSubview:screoolView];
+//    
+//    
+// 
+    
+//    UIImageView *fakeUIView = [[UIImageView alloc] init];
+//    fakeUIView.bounds = [self.window bounds];
+//    [self.window addSubview:fakeUIView];
+//    fakeUIView.image = [UIImage imageNamed:@"fulltry.png"];
+    
+   // 
+   // [self.window makeKeyAndVisible];
     return YES;
+
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 //chsu
-@interface fmAccountViewController : UIViewController
-
+@interface fmAccountViewController : UIViewController   <UIScrollViewDelegate>
+@property (weak, nonatomic) IBOutlet UIButton *switchButton;
+@property (weak, nonatomic) IBOutlet UITableView *tableBalanceView;
+@property (weak, nonatomic) IBOutlet UIScrollView *squareBalanceView;
 @end

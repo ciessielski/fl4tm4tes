@@ -12,7 +12,12 @@
 
 @end
 
+
 @implementation fmAccountViewController
+@synthesize tableBalanceView;
+@synthesize squareBalanceView;
+@synthesize switchButton;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +31,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    tableBalanceView.alpha = 0;
+    squareBalanceView.alpha = 1;
+    [switchButton setTitle:@"Settle" forState:UIControlStateNormal];
+    
+    
+    
+    
 	// Do any additional setup after loading the view.
+}
+- (IBAction)switchBalanceViews:(id)sender
+
+{
+    if (tableBalanceView.alpha == 0 && squareBalanceView.alpha ==1)
+    {
+        tableBalanceView.alpha = 1;
+        squareBalanceView.alpha = 0;
+        [switchButton setTitle:@"Return" forState:UIControlStateNormal];
+        
+    }
+    else
+    {
+        tableBalanceView.alpha = 0;
+        squareBalanceView.alpha = 1;
+        [switchButton setTitle:@"Settle" forState:UIControlStateNormal];
+    }
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad
 {
+    UIImageView *imgView = [[UIImageView alloc] init];
+    
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
